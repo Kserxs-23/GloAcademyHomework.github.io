@@ -1,0 +1,57 @@
+.section{
+	margin: 100px auto;
+}
+.section h1{
+	margin-bottom: 60px;
+	font-size: 24px;
+	font-family: Tahoma;
+	line-height: 1.5;
+	font-weight: 900;
+}
+.row span {
+	display: block;
+	font-weight: 300;
+}
+.form {
+	height: 315px;
+	padding: 31px 14px;
+	border: 5px solid #3c3cdd;
+}
+.form-header {
+	font-size: 20px;
+	font-weight: 900;
+	margin-bottom: 35px;
+}
+.form-btn{
+	height: 65px;
+	color: white;
+	background-color: #3c3cdd;
+	margin: 10px auto 30px auto;
+}
+.form-input {
+	height: 50px;
+	margin-top: 10px;
+}
+.features {
+	margin: 50px auto 60px auto;
+}
+.features p {
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.section-btn {
+	height: 60px;
+	width: 100%;
+	background-color: #3c3cdd;
+	color: white;
+}
+.video {
+	margin-bottom: 40px;
+}
+.col-md-6 {
+	margin-top: 20px;
+}
+.col-lg-3 {
+	margin-top: 30px;
+}
