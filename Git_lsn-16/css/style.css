@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'ProximaNova_reg';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova_bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/* Basiс settings */
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "ProximaNova_reg", sans-serif;
+}
+section {
+  padding: 10rem 0;
+}
+a:hover {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
+.button {
+  font-size: 1.2rem;
+  padding: 1.2rem 2rem;
+  background-color: #f6ae00;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #ffb911;
+}
+/* Main */
+.main {
+  padding: 3rem 0;
+  background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+.main-content {
+  margin-top: 10rem;
+}
+.main-content h1 {
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem;
+}
+.main-subtitle {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+.main span {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #45b613;
+  padding: 20px 30px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.main span strong {
+  font-size: 2.4rem;
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.main-trigger {
+  margin-top: 2.5rem;
+  font-size: 1.9rem;
+  display: block;
+  text-transform: uppercase;
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.main-form {
+  background-color: #ffffff;
+  padding: 4rem 3.5rem;
+  text-align: center;
+}
+.main-form h1 {
+  font-size: 1.8rem;
+  text-transform: none;
+  margin-bottom: 6rem;
+}
+.main-form h1 strong {
+  font-size: 1.9rem;
+}
+.main-form label {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 1.3rem;
+}
+.main-form-input {
+  width: 100%;
+  height: 5.3rem;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+.main-form-btn {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 5.5rem;
+  margin-bottom: 1.5rem;
+}
+.main-form small {
+  font-size: 1rem;
+}
+.main-clarification {
+  display: block;
+  font-size: 0.95rem;
+  margin-top: 4rem;
+  margin-left: 5.5rem;
+}
+.wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+.header {
+  height: 7rem;
+}
+.phone-link {
+  display: inline-block;
+  color: #1a1820;
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 2rem;
+  height: 7rem;
+  line-height: 7rem;
+}
+@media (max-width: 991px) {
+  .main {
+    background: #ffffff url(../img/main-bg.jpg) 0 center no-repeat;
+    background-size: cover;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .main-form {
+    margin-top: 4rem;
+  }
+  .main-clarification {
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+  .phone-link {
+    margin-top: 2rem;
+  }
+  .wrap {
+    margin-top: 2rem;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+  .main-title {
+    margin-top: 6rem;
+  }
+  .main-form h1 {
+    font-size: 2rem;
+  }
+  .main-form label {
+    font-size: 1.5rem;
+  }
+  .main-form-input {
+    height: 6rem;
+  }
+  .main-form-btn {
+    height: 6.5rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .main-form small {
+    font-size: 1.5rem;
+  }
+  .main-clarification {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 575px) {
+  .main-title {
+    margin-top: 10rem;
+  }
+  .main-title h1 {
+    font-size: 3rem;
+  }
+  .phone-link,
+  .wrap {
+    margin-top: 1rem;
+  }
+}
