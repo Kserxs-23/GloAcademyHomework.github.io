@@ -10,3 +10,5 @@ This repository includes my homework
 [lesson_14](https://Kserxs-23.github.io/lesson_14/index.html "Practise")
 
 [lesson_15](https://Kserxs-23.github.io/урок15/index.html "hover")
+
+[lesson_16](https://Kserxs-23.github.io/Git_lsn-16/index.html "Practise")
