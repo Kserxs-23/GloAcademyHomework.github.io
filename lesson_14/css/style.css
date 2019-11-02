@@ -22,6 +22,14 @@ body {
 section {
   padding: 10rem 0;
 }
+a:hover {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
 .button {
   font-size: 1.2rem;
   padding: 1.2rem 2rem;
@@ -30,6 +38,17 @@ section {
   border-radius: 8px;
   border: none;
   text-transform: uppercase;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #ffb911;
+}
+.section-header {
+  margin-bottom: 13rem;
+  text-align: center;
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 3.6rem;
 }
 /* Main */
 .main {
@@ -72,7 +91,7 @@ section {
 }
 .main-form {
   background-color: #ffffff;
-  padding: 5rem 4rem;
+  padding: 4rem 3.5rem;
   text-align: center;
 }
 .main-form h1 {
@@ -90,6 +109,7 @@ section {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  font-size: 1.3rem;
 }
 .main-form-input {
   width: 100%;
@@ -97,6 +117,8 @@ section {
   border: 1px solid #dddddd;
   border-radius: 5px;
   margin-bottom: 2.5rem;
+  padding: 0 1rem;
+  font-size: 2rem;
 }
 .main-form-btn {
   font-size: 1.5rem;
@@ -113,6 +135,56 @@ section {
   margin-top: 4rem;
   margin-left: 5.5rem;
 }
+/* Features */
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  margin-top: 3.3rem;
+  font-size: 2rem;
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.features-block p {
+  margin: 3rem auto 0 auto;
+  font-size: 1.6rem;
+  width: 80%;
+}
+.features-block p a {
+  color: #45b613;
+  text-decoration: underline;
+}
+.features-img {
+  height: 9rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.features-slider {
+  margin-top: 10rem;
+}
+.slick-active {
+  outline: none;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/features/left-arrow.svg) center no-repeat;
+  background-size: 100%;
+}
+.next {
+  right: 0;
+  background: url(../img/features/right-arrow.svg) center no-repeat;
+  background-size: 100%;
+}
 .wrap {
   display: table;
   width: 100%;
@@ -126,6 +198,9 @@ section {
 .header {
   height: 7rem;
 }
+.header-btn-2 {
+  display: none;
+}
 .phone-link {
   display: inline-block;
   color: #1a1820;
@@ -133,4 +208,81 @@ section {
   font-size: 2rem;
   height: 7rem;
   line-height: 7rem;
+}
+@media (max-width: 991px) {
+  .main {
+    background: #ffffff url(../img/main-bg.jpg) 0 center no-repeat;
+    background-size: cover;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .main-form {
+    margin-top: 4rem;
+  }
+  .main-clarification {
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+  .phone-link {
+    margin-top: 2rem;
+  }
+  .wrap {
+    margin-top: 2rem;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+  .main-title {
+    margin-top: 6rem;
+  }
+  .main-form h1 {
+    font-size: 2rem;
+  }
+  .main-form label {
+    font-size: 1.5rem;
+  }
+  .main-form-input {
+    height: 6rem;
+  }
+  .main-form-btn {
+    height: 6.5rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .main-form small {
+    font-size: 1.5rem;
+  }
+  .main-clarification {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 575px) {
+  .main-content {
+    margin-top: 10rem;
+  }
+  .main-content h1 {
+    margin-bottom: 2.5rem;
+  }
+  .main-title h1 {
+    font-size: 3rem;
+  }
+  .main-subtitle {
+    margin-bottom: 3rem;
+  }
+  .phone-link,
+  .wrap {
+    margin-top: 1rem;
+  }
+  .header-btn {
+    display: none;
+  }
+  .header-btn-2 {
+    display: block;
+    width: 100%;
+  }
 }
