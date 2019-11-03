@@ -14,3 +14,5 @@ This repository includes my homework
 [lesson_16](https://Kserxs-23.github.io/Git_lsn-16/index.html "Practise")
 
 [lesson_17](https://Kserxs-23.github.io/slider/index.html "Slider")
+
+[lesson_18](https://Kserxs-23.github.io/lesson_18/index.html "Modal Window")
