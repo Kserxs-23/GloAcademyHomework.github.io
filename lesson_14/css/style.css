@@ -27,7 +27,8 @@ a:hover {
 }
 button:focus,
 input:focus,
-a:focus {
+a:focus,
+textarea:focus {
   outline: none;
 }
 .button {
@@ -38,6 +39,7 @@ a:focus {
   border-radius: 8px;
   border: none;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .button:hover {
@@ -108,7 +110,8 @@ a:focus {
   padding: 0.5rem;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
   font-size: 1.3rem;
 }
 .main-form-input {
@@ -169,7 +172,8 @@ a:focus {
 .arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 99;
   width: 2rem;
   height: 2rem;
@@ -185,6 +189,7 @@ a:focus {
   background: url(../img/features/right-arrow.svg) center no-repeat;
   background-size: 100%;
 }
+/* Header */
 .wrap {
   display: table;
   width: 100%;
@@ -209,6 +214,50 @@ a:focus {
   height: 7rem;
   line-height: 7rem;
 }
+/* Modal */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+}
+.popup-close {
+  position: absolute;
+  top: -2.7rem;
+  right: -4rem;
+  font-size: 5rem;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+}
+.popup-content {
+  position: fixed;
+  top: 10%;
+  left: 38%;
+  padding: 3.5rem 1rem 1.5rem;
+  width: 35.5rem;
+  height: 53.7rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+.popup-content-header {
+  font-family: "ProximaNova_bold", sans-serif;
+}
+.popup-content-text {
+  margin-bottom: -1rem;
+  font-family: "ProximaNova_reg", sans-serif;
+  font-size: 1.8rem;
+}
+.popup-message {
+  height: 9rem;
+}
+/* Media queries */
 @media (max-width: 991px) {
   .main {
     background: #ffffff url(../img/main-bg.jpg) 0 center no-repeat;

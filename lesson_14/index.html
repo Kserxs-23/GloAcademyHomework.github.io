@@ -25,8 +25,8 @@
 						<div class="col-lg-3 col-md-4 col-sm-6 col-6">
 							<div class="wrap">
 								<div class="wrap-block">
-									<button class="button header-btn">Получить консультацию</button>
-									<button class="button header-btn-2">Консультация</button>
+									<button class="button header-btn get-consult">Получить консультацию</button>
+									<button class="button header-btn-2 get-consult">Консультация</button>
 								</div>
 							</div>
 						</div>
@@ -110,15 +110,48 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="popup">
+			<div class="popup-dialog">
+				<div class="popup-content">
+					<button class="popup-close">&times;</button>
+					<h2 class="popup-content-header">Заинтересовало?</h2>
+					<p class="popup-content-text">Оставьте контактные данные <br>для связи</p>
+					<div class="main-form">
+						<form action="#">
+							<label for="#">Ваше имя</label>
+							<input class="main-form-input" type="text">
+							<label for="">Номер телефона</label>
+							<input class="main-form-input" type="text">
+							<label for="">Сообщение</label>
+							<textarea class="main-form-input popup-message" rows="5"></textarea>
+							<button class="main-form-btn button">Оставьте заявку</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 				
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script
+		  src="https://code.jquery.com/jquery-1.12.4.min.js"
+		  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+		  crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="slick/slick.css">
 		<link rel="stylesheet" href="slick/slick-theme.css">
 		<script type="text/javascript" src="slick/slick.min.js"></script>
 
 		<script>
 			$(document).ready(function(){
+				$(".get-consult").on('click', function(event) {
+					event.preventDefault();
+					$('.popup').fadeIn();
+				});
+				$(".popup-close").on('click', function(event) {
+					event.preventDefault();
+					$('.popup').fadeOut();
+				});
+
 			  $('.features-slider').slick({
 			  	infinite: true,
   				slidesToShow: 4,
