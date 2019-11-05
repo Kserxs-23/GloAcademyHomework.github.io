@@ -19,4 +19,4 @@ This repository includes my homework
 
 [Tab](https://Kserxs-23.github.io/tab/index.html "Tab") 
 
-[Accordeon](https://Kserxs-23.github.io/tab/index.html "Accordeon") 
+[Accordeon](https://Kserxs-23.github.io/Аккордеон/index.html "Accordeon") 
