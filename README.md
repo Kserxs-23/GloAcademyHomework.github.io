@@ -13,8 +13,10 @@ This repository includes my homework
 
 [lesson_16](https://Kserxs-23.github.io/Git_lsn-16/index.html "Practise")
 
-[lesson_17](https://Kserxs-23.github.io/slider/index.html "Slider")
+[Slider](https://Kserxs-23.github.io/slider/index.html "Slider")
 
-[lesson_18](https://Kserxs-23.github.io/lesson_18/index.html "Modal Window")
+[Modal Window](https://Kserxs-23.github.io/lesson_18/index.html "Modal Window")
 
-[lesson_19](https://Kserxs-23.github.io/tab/index.html "Tab") 
+[Tab](https://Kserxs-23.github.io/tab/index.html "Tab") 
+
+[Accordeon](https://Kserxs-23.github.io/tab/index.html "Accordeon") 
