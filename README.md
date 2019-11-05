@@ -16,3 +16,5 @@ This repository includes my homework
 [lesson_17](https://Kserxs-23.github.io/slider/index.html "Slider")
 
 [lesson_18](https://Kserxs-23.github.io/lesson_18/index.html "Modal Window")
+
+[lesson_19](https://Kserxs-23.github.io/tab/index.html "Tab")
