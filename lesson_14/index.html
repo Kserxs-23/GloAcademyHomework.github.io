@@ -7,11 +7,12 @@
 		<title>Гипсолит. Штукатурка стен.</title>
 
 		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 
 	<body>
-
+	
 		<main class="main">
 			<div class="container">
 				<div class="header">
@@ -60,6 +61,8 @@
 				</div>
 			</div>
 		</main>
+	
+
 
 		<section class="features">
 			<div class="container">
@@ -111,6 +114,106 @@
 			</div>
 		</section>
 
+
+
+		<section class="prices">
+			<div class="container">
+				<div class="prices-head">
+					<div class="row">
+						<div class="col-lg-4 offset-lg-4">
+							<h2 class="section-header prices-header">Цены</h2>
+							<p>Выберите вариант, который подходит Вам:</p>
+						</div>
+						<div class="col-lg-4">
+							<div class="wrap">
+								<div class="wrap-block">
+									<button class="button prices-button-1" data-toggle="modal">рассчитать точную стоимость</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+
+					<div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+						<div class="prices-block">
+								<h3>Штукатурка вашим материалом</h3>
+								<img src="img/prices/image1.jpg" alt="Ваш материал">
+								<p>от <span>300</span> руб/м<sup>2</sup></p>
+								<div class="prices-block-features">
+									<ul>
+										<li>Проведение работ</li>
+										<li>Уборка</li>
+									</ul>
+								</div>
+									<button class="button button-order">Заказать</button>
+						</div>
+					</div>
+
+					<div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+						<div class="prices-block">
+							<h3>Штукатурка под шпаклёвку</h3>
+							<img src="img/prices/image2.jpg" alt="Шпаклёвка">
+							<p>от <span>530</span> руб/м<sup>2</sup></p>
+							<div class="prices-block-features">
+								<ul>
+									<li>Завоз материала и его подъём</li>
+									<li>Проведение работ</li>
+									<li>Уборка</li>
+									<li>Гарантия 2 года</li>
+								</ul>
+							</div>
+							<button class="button button-order">Заказать</button>
+						</div>
+					</div>
+
+					<div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+						<div class="prices-block">
+							<h3>Штукатурка под обои</h3>
+							<img src="img/prices/image3.jpg" alt="Обои">
+							<p>от <span>560</span> руб/м<sup>2</sup></p>
+							<div class="prices-block-features">
+								<ul>
+									<li>Завоз материала и его подъём</li>
+									<li>Проведение работ</li>
+									<li>Уборка</li>
+									<li>Гарантия 2 года</li>
+									<li>Можно сразу клеить обои</li>
+								</ul>
+							</div>
+							<button class="button button-order">Заказать</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-sm-8 offset-sm-2">
+						<div class="wrap">
+							<div class="wrap-block">
+								<button class="button prices-button-2" data-toggle="modal">рассчитать точную стоимость</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+	<!-- Modal windows -->
+
 		<div class="popup">
 			<div class="popup-dialog">
 				<div class="popup-content">
@@ -132,15 +235,24 @@
 			</div>
 		</div>
 				
-
+	
+	
+	
+		<!-- Jquery -->
+	
 		<script
 		  src="https://code.jquery.com/jquery-1.12.4.min.js"
 		  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 		  crossorigin="anonymous"></script>
+	
+		<script src="js/bootstrap.min.js"></script>
+	
+		<!-- Slick-slider -->
+	
 		<link rel="stylesheet" href="slick/slick.css">
 		<link rel="stylesheet" href="slick/slick-theme.css">
 		<script type="text/javascript" src="slick/slick.min.js"></script>
-
+	
 		<script>
 			$(document).ready(function(){
 				$(".get-consult").on('click', function(event) {
@@ -151,36 +263,36 @@
 					event.preventDefault();
 					$('.popup').fadeOut();
 				});
-
+	
 			  $('.features-slider').slick({
 			  	infinite: true,
-  				slidesToShow: 4,
-  				slidesToScroll: 1,
-  				responsive: [
-  				    {
-  				      breakpoint: 992,
-  				      settings: {
-  				        slidesToShow: 2,
-  				        prevArrow: "<button class='prev arrow'></button>",
-  				        nextArrow: "<button class='next arrow'></button>",
-  				        slidesToScroll: 2
-  				      }
-  				    },
-  				    {
-  				      breakpoint: 767,
-  				      settings: {
-  				        slidesToShow: 1,
-  				        prevArrow: "<button class='prev arrow'></button>",
-  				        nextArrow: "<button class='next arrow'></button>",
-  				        slidesToScroll: 1
-  				      }
-  				    }
-  				   
-  				  ]
+	  				slidesToShow: 4,
+	  				slidesToScroll: 1,
+	  				responsive: [
+	  				    {
+	  				      breakpoint: 992,
+	  				      settings: {
+	  				        slidesToShow: 2,
+	  				        prevArrow: "<button class='prev arrow'></button>",
+	  				        nextArrow: "<button class='next arrow'></button>",
+	  				        slidesToScroll: 2
+	  				      }
+	  				    },
+	  				    {
+	  				      breakpoint: 767,
+	  				      settings: {
+	  				        slidesToShow: 1,
+	  				        prevArrow: "<button class='prev arrow'></button>",
+	  				        nextArrow: "<button class='next arrow'></button>",
+	  				        slidesToScroll: 1
+	  				      }
+	  				    }
+	  				   
+	  				  ]
 			  });
 			});
-
+	
 		</script>
-
+	
 	</body>
 </html>
