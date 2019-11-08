@@ -81,6 +81,32 @@ button, input, a, textarea {
 	font-size: 3.6rem;
 }
 
+.form {
+	label {
+		display: inline-block;
+		background-color: @light;
+		padding: 0.5rem;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		font-size: 1.3rem;
+	}
+	&-input {
+		width: 100%;
+		height: 5.3rem;
+		border: 1px solid @border-input-color;
+		border-radius: 5px;
+		margin-bottom: 2.5rem;
+		padding: 0 1rem;
+		font-size: 2rem;
+	}
+	&-btn {
+		font-size: 1.5rem;
+		width: 100%;
+		height: 5.5rem;
+		margin-bottom: 1.5rem;
+	}
+}
 
 
 /* Main */
@@ -132,30 +158,6 @@ button, input, a, textarea {
 			strong {
 				font-size: 1.9rem;
 			}
-		}
-		label {
-			display: inline-block;
-			background-color: @light;
-			padding: 0.5rem;
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%) translateY(-50%);
-			font-size: 1.3rem;
-		}
-		&-input {
-			width: 100%;
-			height: 5.3rem;
-			border: 1px solid @border-input-color;
-			border-radius: 5px;
-			margin-bottom: 2.5rem;
-			padding: 0 1rem;
-			font-size: 2rem;
-		}
-		&-btn {
-			font-size: 1.5rem;
-			width: 100%;
-			height: 5.5rem;
-			margin-bottom: 1.5rem;
 		}
 		small {
 			font-size: 1rem;
@@ -315,6 +317,7 @@ button, input, a, textarea {
 .feedback {
 	background: url(../img/feedback/feedback-bg.jpg) no-repeat center center;
 	background-size: cover;
+	position: relative;
 	.section-header {
 		margin-bottom: 13.4rem;
 	}
@@ -396,6 +399,29 @@ button, input, a, textarea {
 		right: -5rem;
 		top: 50%;
 		transform: translateY(-50%);
+	}
+
+	&-form {
+		margin-top: 6rem;
+		padding: 3rem 10rem;
+		background-color: @light;
+		h4 {
+			.bold();
+			font-size: 2.2rem;
+			text-align: center;
+		}
+		&-main {
+			margin-top: 5rem;
+		}
+		&-btn {
+			width: 26rem;
+			margin-left: 13.7rem;		
+		}
+	}
+	.hand {
+		position: absolute;
+		left: -4rem;
+		bottom: -8rem;
 	}
 }
 
@@ -510,6 +536,17 @@ button, input, a, textarea {
 			}
 		}
 	}
+	.feedback {
+		&-slider {
+			&-work {
+				margin-top: 6rem;
+			}
+		}
+
+		.hand {
+			display: none;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -558,13 +595,22 @@ button, input, a, textarea {
 			display: block;
 		}
 	}
+	.feedback {
+		&-form {
+			&-btn {
+				width: 100%;
+				margin: 0;
+			}
+		}
+	}
 }
 
 @media (max-width: 575px) {
 	.main {
 		&-content {
-			margin-top: 10rem;
+			margin-top: 12rem;
 			h1 {
+				font-size: 3rem;
 				margin-bottom: 2.5rem;
 			}
 	}
@@ -592,6 +638,36 @@ button, input, a, textarea {
 	.prices {
 		&-head {
 			margin-bottom: 5rem;
+		}
+	}
+	.feedback {
+		.section-header {
+			margin-bottom: 5rem;
+		}
+		&-slider {
+
+			&-work {
+				margin-top: 2rem;
+			}
+			&-customer {
+				.opinion {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&-form {
+			h4 {
+				font-size: 1.5rem;
+			}
+			&-btn {
+				font-size: 1.3rem;
+			}
+			label {
+				text-align: center;
+			}
+			input {
+				font-size: 1.5rem;
+			}
 		}
 	}
 
