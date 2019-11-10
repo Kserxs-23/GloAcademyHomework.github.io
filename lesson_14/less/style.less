@@ -425,6 +425,107 @@ button, input, a, textarea {
 	}
 }
 
+/* scheme */
+
+.scheme {
+	padding-bottom: 0;
+	margin: 11.3rem auto; 
+	text-align: center;
+	&-header {
+		margin-bottom: 4rem;
+	}
+	&-title {
+		.reg();
+		font-size: 1.5rem;
+	}
+	&-steps {
+		position: relative;
+		&-block {
+			z-index: 4;
+			margin-top: 6rem;
+			width: 29rem;
+			min-height: 22.2rem;
+			text-align: left;
+			h3 {
+				margin: 3rem auto;
+				font-size: 2rem;
+				.bold();
+			}
+			p {
+				font-size: 1.6rem;
+			}
+		}
+		.bg {
+			z-index: 1;
+			position: absolute;
+			left: 60%;
+			bottom: -24.7rem;
+		}
+	}
+}
+
+.included {
+	background-color: @bg-light;
+	.section-header {
+		margin-bottom: 5rem;
+		color: @icons-color;
+	}
+	.scheme-title {
+		text-align: center;
+	}
+	&-box-header-1 {
+		margin-top: 6rem;
+	}
+	&-things {
+		margin-top: 10.5rem;
+		&-box {
+			min-height: 13rem;
+		}
+		.wrapper-block {
+			display: inline-block;
+			padding: 2px;
+			width: 5rem;
+			height: 5rem;
+			background-color: @icons-color;
+			border-radius: 100%;
+			color: @light;
+		}
+		.wrapped-block {
+			display: inline-block;
+			width: 4.6rem;
+			height: 4.6rem;
+			border: 3px solid @light;
+			border-radius: 100%;
+			line-height: 4.5rem;
+			.point-1 {
+				margin-left: 0.2rem;
+				.bold();
+				text-align: center;
+				font-size: 2rem;
+
+			}
+		}
+		h4 {
+			margin-left: 1rem;			
+			display: inline-block;
+			.bold();
+			font-size: 1.6rem;
+		}
+		h5 {
+			position: relative;
+			left: 1rem;
+			top: 1.5rem;
+			display: inline-block;
+			.bold();
+			font-size: 1.6rem;
+		}
+		.paragraph {
+			position: relative;
+			left: 6.2rem;
+			bottom: 1rem;
+		}
+	}
+}
 
 
 /* Header */
@@ -603,6 +704,15 @@ button, input, a, textarea {
 			}
 		}
 	}
+	.scheme {
+		margin-top: 0;
+		.bg {
+			display: none;
+		}
+	}
+	.included-things-box {
+		margin-left: 7rem;
+	}
 }
 
 @media (max-width: 575px) {
@@ -669,6 +779,16 @@ button, input, a, textarea {
 				font-size: 1.5rem;
 			}
 		}
+		.scheme {
+			margin: 6rem auto;
+			&-steps-block {
+				h3 {
+					margin: 2rem auto;
+				}
+			}
+		}
+		.included-things-box {
+			margin-left: 2rem;
+		}
 	}
-
 }
