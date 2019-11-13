@@ -60,6 +60,10 @@ button, input, a, textarea {
 	}
 }
 
+footer {
+	padding: 3.3rem 0;
+}
+
 .button {
 	font-size: 1.2rem;
 	padding: 1.2rem 2rem;
@@ -465,6 +469,8 @@ button, input, a, textarea {
 	}
 }
 
+/* included block */
+
 .included {
 	background-color: @bg-light;
 	.section-header {
@@ -528,6 +534,8 @@ button, input, a, textarea {
 	}
 }
 
+/* fear block */
+
 .fear {
 	position: relative;
 	img {
@@ -579,6 +587,150 @@ button, input, a, textarea {
 	p {
 		font-size: 1.3rem;
 		margin-bottom: 2rem;
+	}
+}
+
+/* materials block */
+
+.materials {
+	background: url(../img/materials/materials-bg.png) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	.section-header {
+		margin-bottom: 5.5rem;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	&-end-title {
+		margin: 8.5rem auto 0;
+		font-size: 1.6rem;
+		span {
+			.bold();
+			font-size: 1.9rem;
+		}
+		a {
+			font-size: 1.5rem;
+			color: @icons-color;
+			text-decoration: underline;
+		}
+	}
+}
+
+/* check block */
+
+.check {
+	background: @light url(../img/check/check.png) no-repeat center center;
+	background-size: cover;
+	&-margin {
+		margin-top: 8rem;
+	}
+	&-text {
+		text-align: left;
+		.section-header {
+			text-align: left;
+			text-transform: uppercase;
+			margin-bottom: 5rem;
+		}
+		p {
+			font-size: 1.8rem;
+		}
+	}
+	&-form {
+		width: 35rem;
+		padding: 4.9rem 4rem;
+		text-align: center;
+		background: @light;
+		&-header {
+			margin-bottom: 3.5rem;
+			font-size: 2rem;
+		}
+		small {
+			font-size: 1.3rem;
+		}
+	}
+}
+
+/* services */
+
+.services {
+	text-align: center;
+	background: url(../img/services/services-bg.png) no-repeat center center;
+	background-size: cover;
+	&-header {
+		margin-bottom: 2rem;
+		font-size: 3rem;
+	}
+	p {
+		color: white;
+		font-size: 1.7rem;
+	}
+	&-box {
+		padding: 0 3rem;
+		margin-top: 7rem;
+		min-height: 30rem;
+		img {
+			width: 100%;
+			max-width: 33rem;
+		}
+		p {
+			margin: 3rem auto;
+			font-size: 2rem;
+		}
+	}
+}
+
+/* contacts */
+
+.contacts {
+	background: @light url(../img/contacts/contacts-bg.png) center center no-repeat;
+	background-size: cover;
+
+	.check-form {
+		padding: 3rem 4rem;
+		&-header {
+			font-size: 1.7rem;
+		}
+	}
+	h1 {
+		.bold();
+		font-size: 3rem;
+	}
+	p {
+		margin-top: 2rem;
+		margin-bottom: 2.7rem;
+		font-size: 1.5rem;
+	}
+	&-link {
+		display: inline-block;
+		color: @text;
+		text-decoration: underline;
+		&:hover {
+			color: darken(@text, 10%);
+		}
+	}
+}
+
+/* footer */
+
+.footer {
+	&-text {
+		text-align: center;
+		line-height: 1.7rem;
+		p {
+			font-size: 1.5rem;
+			a {
+				margin-bottom: 0.3rem;
+			}
+			strong {
+				font-size: 1.8rem;
+			}
+		}
+	}
+	&-dev-logo {
+		text-align: right;
+		line-height: 1rem;
 	}
 }
 
@@ -655,6 +807,7 @@ button, input, a, textarea {
 
 /* Media queries */
 
+
 @media (max-width: 991px) {
 	.main {
 		background: #fff url(../img/main-bg.jpg) 0 center no-repeat;
@@ -712,6 +865,19 @@ button, input, a, textarea {
 		&-solution {
 			margin-left: 0;
 		}
+	}
+	.check {
+		.section-header {
+			text-align: center;
+		}
+		&-text {
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+	}
+	.contacts {
+		background: none;
+		text-align: center;
 	}
 }
 
@@ -778,6 +944,18 @@ button, input, a, textarea {
 	.included-things-box {
 		margin-left: 7rem;
 	}
+	.check {
+		background: url(../img/check/mobile-bg.png) no-repeat center center;
+		background-size: cover;
+		}
+		.footer {
+			&-text {
+				margin-top: 2rem;
+			}
+			&-dev-logo {
+				margin-top: 2rem;
+			}
+		}
 }
 
 @media (max-width: 575px) {
@@ -861,4 +1039,10 @@ button, input, a, textarea {
 			max-width: 47rem;
 		}
 	}
-}
+
+	.services {
+		.section-header {
+			font-size: 2.5rem;
+			} 
+		}
+	}

@@ -31,6 +31,9 @@ a:focus,
 textarea:focus {
   outline: none;
 }
+footer {
+  padding: 3.3rem 0;
+}
 .button {
   font-size: 1.2rem;
   padding: 1.2rem 2rem;
@@ -426,6 +429,7 @@ textarea:focus {
   left: 60%;
   bottom: -24.7rem;
 }
+/* included block */
 .included {
   background-color: #f5f5f5;
 }
@@ -487,6 +491,7 @@ textarea:focus {
   left: 6.2rem;
   bottom: 1rem;
 }
+/* fear block */
 .fear {
   position: relative;
 }
@@ -540,6 +545,137 @@ textarea:focus {
 .fear p {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+/* materials block */
+.materials {
+  background: url(../img/materials/materials-bg.png) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+.materials .section-header {
+  margin-bottom: 5.5rem;
+}
+.materials img {
+  display: block;
+  margin: 0 auto;
+}
+.materials-end-title {
+  margin: 8.5rem auto 0;
+  font-size: 1.6rem;
+}
+.materials-end-title span {
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 1.9rem;
+}
+.materials-end-title a {
+  font-size: 1.5rem;
+  color: #45b613;
+  text-decoration: underline;
+}
+/* check block */
+.check {
+  background: #ffffff url(../img/check/check.png) no-repeat center center;
+  background-size: cover;
+}
+.check-margin {
+  margin-top: 8rem;
+}
+.check-text {
+  text-align: left;
+}
+.check-text .section-header {
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+.check-text p {
+  font-size: 1.8rem;
+}
+.check-form {
+  width: 35rem;
+  padding: 4.9rem 4rem;
+  text-align: center;
+  background: #ffffff;
+}
+.check-form-header {
+  margin-bottom: 3.5rem;
+  font-size: 2rem;
+}
+.check-form small {
+  font-size: 1.3rem;
+}
+/* services */
+.services {
+  text-align: center;
+  background: url(../img/services/services-bg.png) no-repeat center center;
+  background-size: cover;
+}
+.services-header {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.services p {
+  color: white;
+  font-size: 1.7rem;
+}
+.services-box {
+  padding: 0 3rem;
+  margin-top: 7rem;
+  min-height: 30rem;
+}
+.services-box img {
+  width: 100%;
+  max-width: 33rem;
+}
+.services-box p {
+  margin: 3rem auto;
+  font-size: 2rem;
+}
+/* contacts */
+.contacts {
+  background: #ffffff url(../img/contacts/contacts-bg.png) center center no-repeat;
+  background-size: cover;
+}
+.contacts .check-form {
+  padding: 3rem 4rem;
+}
+.contacts .check-form-header {
+  font-size: 1.7rem;
+}
+.contacts h1 {
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 3rem;
+}
+.contacts p {
+  margin-top: 2rem;
+  margin-bottom: 2.7rem;
+  font-size: 1.5rem;
+}
+.contacts-link {
+  display: inline-block;
+  color: #1a1820;
+  text-decoration: underline;
+}
+.contacts-link:hover {
+  color: #020203;
+}
+/* footer */
+.footer-text {
+  text-align: center;
+  line-height: 1.7rem;
+}
+.footer-text p {
+  font-size: 1.5rem;
+}
+.footer-text p a {
+  margin-bottom: 0.3rem;
+}
+.footer-text p strong {
+  font-size: 1.8rem;
+}
+.footer-dev-logo {
+  text-align: right;
+  line-height: 1rem;
 }
 /* Header */
 .wrap {
@@ -657,6 +793,17 @@ textarea:focus {
   .fear-solution {
     margin-left: 0;
   }
+  .check .section-header {
+    text-align: center;
+  }
+  .check-text {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .contacts {
+    background: none;
+    text-align: center;
+  }
 }
 @media (max-width: 767px) {
   .header {
@@ -712,6 +859,16 @@ textarea:focus {
   }
   .included-things-box {
     margin-left: 7rem;
+  }
+  .check {
+    background: url(../img/check/mobile-bg.png) no-repeat center center;
+    background-size: cover;
+  }
+  .footer-text {
+    margin-top: 2rem;
+  }
+  .footer-dev-logo {
+    margin-top: 2rem;
   }
 }
 @media (max-width: 575px) {
@@ -774,5 +931,8 @@ textarea:focus {
   }
   .fear-border {
     max-width: 47rem;
+  }
+  .services .section-header {
+    font-size: 2.5rem;
   }
 }
